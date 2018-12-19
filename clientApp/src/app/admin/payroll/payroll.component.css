@@ -1,0 +1,10 @@
+#table{
+    background: rgba(255,255,255, 0.4);
+    padding:100px;
+    box-shadow: rgba(0,0,0, 0.2) 4px 4px 4px;
+    width:90%;
+    margin: auto;
+}
+h3{
+    text-align: center;
+}
