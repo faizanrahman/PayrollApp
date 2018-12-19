@@ -1,0 +1,18 @@
+<nav>
+    <div class="nav-wrapper">
+      <img src="assets/img/payrollicon.png" alt="icon" style="opacity: 0.5">
+      <a href="#" class="brand-logo">Payroll App</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a [routerLink]="['list']">List of Employees</a></li>
+        <li><a [routerLink]="['add']">Add Employee</a></li>
+        <li><a [routerLink]="['payroll']">Generate Payroll</a></li>
+        <li><a [routerLink]="['summary']">Summary</a></li>
+        <li><a [routerLink]="['logout']">LogOut</a></li>
+
+      </ul>
+    </div>
+  </nav>
+<router-outlet></router-outlet>
+
+
+

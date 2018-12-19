@@ -11,4 +11,7 @@ constructor(private _testService: HttpClient) { }
   servicetest(){
     return this._testService.get('http://localhost:5000/api/values');
   }
+  // logout(){
+  //   return this._testService.get('http://localhost:5000/api/auth/logout');
+  // }
 }
