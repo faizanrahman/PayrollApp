@@ -26,6 +26,8 @@ constructor(private _http: HttpClient) { }
     .catch(this.handleError)
     // .pipe(catchError(this.handleError));
   }
+
+  
   // logout(){
   //   return this._testService.get('http://localhost:5000/api/auth/logout');
   // }
