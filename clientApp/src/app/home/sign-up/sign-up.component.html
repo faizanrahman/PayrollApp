@@ -1,21 +1,24 @@
 <div class="container">
   <div class="row">
     <h3>PayRoll App</h3>
-    <form class="col s12">
+    <form (submit)="login()" class="col s12">
+
+      {{login_form | json}}
             <div class="row">
         <div class="input-field col s12">
-          <input id="email" type="email" class="validate" [pattern]="emailPattern">
+          <input name="login_form.email" [(ngModel)]="login_form.email" id="email" type="email" class="validate" [pattern]="emailPattern">
           <label for="email">Email</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input id="password" type="password" class="validate">
+          <input name="login_form.password" [(ngModel)]="login_form.password" id="password" type="password" class="validate">
           <!-- #password="ngModel" [(ngModel)]="user.Password" -->
           <label for="password">Password</label>
         </div>
       </div>
-      <a class="waves-effect waves-light btn">button</a>
+      <!-- <a class="waves-effect waves-light btn">Login</a> -->
+      <button>CLICK</button>
     </form>
   </div>
   <a [routerLink]="['/employee']">Go To Employee</a>
